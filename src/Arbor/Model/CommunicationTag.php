@@ -62,7 +62,7 @@ class CommunicationTag extends ModelBase
     /**
      * @param ModelBase $communication
      */
-    public function setCommunication(\ModelBase $communication = null)
+    public function setCommunication(TelephoneCall $communication = null)
     {
         $this->setProperty('communication', $communication);
     }
@@ -78,7 +78,7 @@ class CommunicationTag extends ModelBase
     /**
      * @param ModelBase $taggedEntity
      */
-    public function setTaggedEntity(\ModelBase $taggedEntity = null)
+    public function setTaggedEntity(Guardian|Student|Staff|EducationalInstitution $taggedEntity = null)
     {
         $this->setProperty('taggedEntity', $taggedEntity);
     }
