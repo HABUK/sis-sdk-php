@@ -10,6 +10,7 @@ class ResourceType
 	const CYMRU_EDUCATIONAL_INSTITUTION = 'Cymru_EducationalInstitution';
 	const CYMRU_CENSUS_SCHOOL_PHASE = 'Cymru_CensusSchoolPhase';
 	const CYMRU_CHILD_PROTECTION_STATUS_ASSIGNMENT = 'Cymru_ChildProtectionStatusAssignment';
+	const CYMRU_DATA_RETURN_COMPLETER = 'Cymru_DataReturnCompleter';
 	const CYMRU_EDUCATIONAL_INSTITUTION_ENROLMENT = 'Cymru_EducationalInstitutionEnrolment';
 	const CYMRU_ENGLISH_AS_ADDITIONAL_LANGUAGE_STATUS_ASSIGNMENT = 'Cymru_EnglishAsAdditionalLanguageStatusAssignment';
 	const CYMRU_GUARDIAN_RELATIONSHIP_TYPE = 'Cymru_GuardianRelationshipType';
@@ -21,7 +22,6 @@ class ResourceType
 	const CYMRU_PAY_SCALE = 'Cymru_PayScale';
 	const CYMRU_PAY_SCALE_CATEGORY = 'Cymru_PayScaleCategory';
 	const CYMRU_PERMANENT_EXCLUSION = 'Cymru_PermanentExclusion';
-	const CYMRU_PERSON_NATIONALITY = 'Cymru_PersonNationality';
 	const CYMRU_POSITION = 'Cymru_Position';
 	const CYMRU_POSITION_CATEGORY = 'Cymru_PositionCategory';
 	const CYMRU_PROGRAMME = 'Cymru_Programme';
@@ -44,8 +44,6 @@ class ResourceType
 	const CYMRU_SCHOOL_LANGUAGE_CATEGORY_ASSIGNMENT = 'Cymru_SchoolLanguageCategoryAssignment';
 	const CYMRU_SCHOOL_TYPE = 'Cymru_SchoolType';
 	const CYMRU_SCHOOL_VACANCY = 'Cymru_SchoolVacancy';
-	const CYMRU_SCHOOL_WORKFORCE_CENSUS = 'Cymru_SchoolWorkforceCensus';
-	const CYMRU_SCHOOL_WORKFORCE_CENSUS_RETURN = 'Cymru_SchoolWorkforceCensusReturn';
 	const CYMRU_SCHOOL_WORKFORCE_CENSUS_BUSINESS_ROLE = 'Cymru_SchoolWorkforceCensusBusinessRole';
 	const CYMRU_SEN_STATUS_ASSIGNMENT = 'Cymru_SenStatusAssignment';
 	const CYMRU_SERVICE_CHILD_CONCERN = 'Cymru_ServiceChildConcern';
@@ -60,7 +58,6 @@ class ResourceType
 	const CYMRU_STAFF_SPECIAL_SCHOOL_TEACHER_QUALIFICATION_TYPE = 'Cymru_StaffSpecialSchoolTeacherQualificationType';
 	const CYMRU_TRAVELLER_STATUS = 'Cymru_TravellerStatus';
 	const CYMRU_TRAVELLER_STATUS_ASSIGNMENT = 'Cymru_TravellerStatusAssignment';
-	const CYMRU_UCI_ASSIGNMENT = 'Cymru_UciAssignment';
 	const CYMRU_UPN_ASSIGNMENT = 'Cymru_UpnAssignment';
 	const CYMRU_YOUNG_CARER_STATUS_ASSIGNMENT = 'Cymru_YoungCarerStatusAssignment';
 	const CYMRU_QUALIFIED_TEACHER_ROUTE = 'Cymru_QualifiedTeacherRoute';

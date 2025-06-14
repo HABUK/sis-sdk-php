@@ -5,7 +5,7 @@ use Arbor\Resource\ResourceType;
 use Arbor\Query\Query;
 use Arbor\Model\ModelBase;
 
-class QualificationAwardDiscountCode extends ModelBase
+class QualificationAwardMetadata extends ModelBase
 {
     public const CODE = 'code';
 
@@ -15,21 +15,17 @@ class QualificationAwardDiscountCode extends ModelBase
 
     public const QUALIFICATION_AWARD = 'qualificationAward';
 
-    public const DISCOUNT_CODE = 'discountCode';
-
     public const COUNTRY_CODE = 'countryCode';
 
-    public const LEVEL = 'level';
+    public const METADATA_NAME = 'metadataName';
 
-    public const EFFECTIVE_DATE = 'effectiveDate';
+    public const METADATA_VALUE = 'metadataValue';
 
-    public const END_DATE = 'endDate';
-
-    protected $_resourceType = ResourceType::QUALIFICATION_AWARD_DISCOUNT_CODE;
+    protected $_resourceType = ResourceType::QUALIFICATION_AWARD_METADATA;
 
     /**
      * @param Query $query
-     * @return QualificationAwardDiscountCode[] | Collection
+     * @return QualificationAwardMetadata[] | Collection
      * @throws Exception
      */
     public static function query(\Arbor\Query\Query $query = null)
@@ -43,14 +39,14 @@ class QualificationAwardDiscountCode extends ModelBase
             $query = new Query();
         }
 
-        $query->setResourceType(ResourceType::QUALIFICATION_AWARD_DISCOUNT_CODE);
+        $query->setResourceType(ResourceType::QUALIFICATION_AWARD_METADATA);
 
         return $gateway->query($query);
     }
 
     /**
      * @param int $id
-     * @return QualificationAwardDiscountCode
+     * @return QualificationAwardMetadata
      * @throws Exception
      */
     public static function retrieve($id)
@@ -60,7 +56,7 @@ class QualificationAwardDiscountCode extends ModelBase
             throw new Exception('You must call ModelBase::setDefaultGateway() prior to calling ModelBase::retrieve()');
         }
 
-        return $gateway->retrieve(ResourceType::QUALIFICATION_AWARD_DISCOUNT_CODE, $id);
+        return $gateway->retrieve(ResourceType::QUALIFICATION_AWARD_METADATA, $id);
     }
 
     /**
@@ -130,22 +126,6 @@ class QualificationAwardDiscountCode extends ModelBase
     /**
      * @return string
      */
-    public function getDiscountCode()
-    {
-        return $this->getProperty('discountCode');
-    }
-
-    /**
-     * @param string $discountCode
-     */
-    public function setDiscountCode(string $discountCode = null)
-    {
-        $this->setProperty('discountCode', $discountCode);
-    }
-
-    /**
-     * @return string
-     */
     public function getCountryCode()
     {
         return $this->getProperty('countryCode');
@@ -162,48 +142,32 @@ class QualificationAwardDiscountCode extends ModelBase
     /**
      * @return string
      */
-    public function getLevel()
+    public function getMetadataName()
     {
-        return $this->getProperty('level');
+        return $this->getProperty('metadataName');
     }
 
     /**
-     * @param string $level
+     * @param string $metadataName
      */
-    public function setLevel(string $level = null)
+    public function setMetadataName(string $metadataName = null)
     {
-        $this->setProperty('level', $level);
+        $this->setProperty('metadataName', $metadataName);
     }
 
     /**
-     * @return \DateTime
+     * @return string
      */
-    public function getEffectiveDate()
+    public function getMetadataValue()
     {
-        return $this->getProperty('effectiveDate');
+        return $this->getProperty('metadataValue');
     }
 
     /**
-     * @param \DateTime $effectiveDate
+     * @param string $metadataValue
      */
-    public function setEffectiveDate(\DateTime $effectiveDate = null)
+    public function setMetadataValue(string $metadataValue = null)
     {
-        $this->setProperty('effectiveDate', $effectiveDate);
-    }
-
-    /**
-     * @return \DateTime
-     */
-    public function getEndDate()
-    {
-        return $this->getProperty('endDate');
-    }
-
-    /**
-     * @param \DateTime $endDate
-     */
-    public function setEndDate(\DateTime $endDate = null)
-    {
-        $this->setProperty('endDate', $endDate);
+        $this->setProperty('metadataValue', $metadataValue);
     }
 }
