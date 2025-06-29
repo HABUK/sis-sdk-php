@@ -98,7 +98,7 @@ class TelephoneCall extends ModelBase
     /**
      * @param ModelBase $caller
      */
-    public function setCaller(Guardian|Staff|Student $caller = null)
+    public function setCaller(Guardian|Staff|PersonNextOfKin|Student $caller = null)
     {
         $this->setProperty('caller', $caller);
     }
@@ -194,7 +194,7 @@ class TelephoneCall extends ModelBase
     /**
      * @param ModelBase $recipient
      */
-    public function setRecipient(Guardian|Staff|Student $recipient = null)
+    public function setRecipient(Guardian|Staff|PersonNextOfKin|Student $recipient = null)
     {
         $this->setProperty('recipient', $recipient);
     }
