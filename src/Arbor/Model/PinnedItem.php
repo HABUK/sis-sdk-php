@@ -62,7 +62,7 @@ class PinnedItem extends ModelBase
     /**
      * @param ModelBase $pinned
      */
-    public function setPinned(\ModelBase $pinned = null)
+    public function setPinned(\ModelBase|StudentAbsenceNote $pinned = null)
     {
         $this->setProperty('pinned', $pinned);
     }
@@ -78,7 +78,7 @@ class PinnedItem extends ModelBase
     /**
      * @param ModelBase $target
      */
-    public function setTarget(\ModelBase $target = null)
+    public function setTarget(\ModelBase|Student $target = null)
     {
         $this->setProperty('target', $target);
     }
