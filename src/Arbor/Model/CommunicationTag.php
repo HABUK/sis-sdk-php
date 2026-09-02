@@ -78,7 +78,7 @@ class CommunicationTag extends ModelBase
     /**
      * @param ModelBase $taggedEntity
      */
-    public function setTaggedEntity(Guardian|Student|Staff|EducationalInstitution $taggedEntity = null)
+    public function setTaggedEntity(Guardian|Student|Staff|EducationalInstitution|PersonNextOfKin $taggedEntity = null)
     {
         $this->setProperty('taggedEntity', $taggedEntity);
     }
